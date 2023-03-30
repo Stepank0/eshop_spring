@@ -1,0 +1,15 @@
+spring:
+  main:
+    allow-circular-references: true
+  jpa:
+    hibernate:
+      ddl-auto: validate # update # create-drop #validate
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5433/e-shop
+    username: postgres
+    password: 21791
+  flyway:
+    baseline-on-migrate: true
+server:
+  port: 8084
